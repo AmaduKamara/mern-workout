@@ -1,0 +1,29 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "MERN FullStack App ",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AmaduKamara/mern-workout.git"
+  },
+  "keywords": [
+    "MERN",
+    "node",
+    "express",
+    "react",
+    "fullstack"
+  ],
+  "author": "Amadu Kamara (Amkam)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/AmaduKamara/mern-workout/issues"
+  },
+  "homepage": "https://github.com/AmaduKamara/mern-workout#readme",
+  "dependencies": {
+    "express": "^4.18.1"
+  }
+}
