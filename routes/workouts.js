@@ -15,7 +15,7 @@ router.get("/:id", (req, res) => {
 });
 
 // POST a single workout
-router.post("/", async (req, res) => );
+router.post("/", async (req, res) => createWorkout);
 
 // DELETE a single workout
 router.delete("/:id", (req, res) => {
