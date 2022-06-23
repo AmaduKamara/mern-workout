@@ -46,9 +46,13 @@ const deleteWorkout = async (req, res) => {
     return res.status(404).json({ error: "No such workout" });
   }
 
-  await Workout.findByIdAndDelete(id);
+  const workout = await Workout.findByIdAndDelete({ _id: id });
 
-  res.status(200).json({ success: "Workout deleted successfully." });
+  if (!workout) {
+    return res.status(404).json({ error: "No such workout" });
+  }
+
+  res.status(200).json(workout);
 };
 
 // Update a single workout
